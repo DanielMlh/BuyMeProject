@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+<browserType>chrome</browserType>
+    <chromeDriver109>webdriver.chrome.driver</chromeDriver109>
+    <chromePath>C:\Users\D\Downloads\23-11_אוטומציה\Class_10\chromedriver.exe</chromePath>
+    <homePageURL>https://buyme.co.il</homePageURL>
+
+</config>
