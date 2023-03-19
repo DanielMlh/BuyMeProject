@@ -6,7 +6,6 @@ import WebSettings.DriverSingleton;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import javax.swing.*;
 import java.time.Duration;
 
 public class SearchBar extends BasePage {
@@ -27,30 +26,30 @@ public void selectCategory(){
 }
 public void clickSearchBtn(){
 
-clickElementJs(ConstantsSrch.searchBtn);
+clickElementJs(LocatorsSrch.searchBtn);
 }
 
 //----------------
 private void clickFeildPrice(){
-        clickElement(ConstantsSrch.selectFeildPrice);
-        wait.until(ExpectedConditions.elementToBeClickable(ConstantsSrch.selectFeildPrice));
+        clickElement(LocatorsSrch.selectFeildPrice);
+        wait.until(ExpectedConditions.elementToBeClickable(LocatorsSrch.selectFeildPrice));
 }
 private void clickPrice(){
-        clickElement(ConstantsSrch.selectPrice);
+        clickElement(LocatorsSrch.selectPrice);
 }
 private void clickFeildDistrict(){
-        clickElement(ConstantsSrch.selectFeildDistrict);
-        wait.until(ExpectedConditions.elementToBeClickable(ConstantsSrch.selectFeildDistrict));
+        clickElement(LocatorsSrch.selectFeildDistrict);
+        wait.until(ExpectedConditions.elementToBeClickable(LocatorsSrch.selectFeildDistrict));
 }
 private void clickDistrict(){
-        clickElement(ConstantsSrch.selectDistrict);
+        clickElement(LocatorsSrch.selectDistrict);
 }
 private void clickFeildCategory(){
-        clickElement(ConstantsSrch.selectFeildCategory);
-        wait.until(ExpectedConditions.elementToBeClickable(ConstantsSrch.selectFeildDistrict));
+        clickElement(LocatorsSrch.selectFeildCategory);
+        wait.until(ExpectedConditions.elementToBeClickable(LocatorsSrch.selectFeildDistrict));
 }
 private void clickCategory(){
-        clickElement(ConstantsSrch.selectCategory);
+        clickElement(LocatorsSrch.selectCategory);
 }
 
 

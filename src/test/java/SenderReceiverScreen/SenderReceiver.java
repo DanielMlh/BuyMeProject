@@ -6,10 +6,10 @@ import WebSettings.BasePage;
 public class SenderReceiver extends BasePage {
 
     public void pickToAnother(){
-        clickElementJs(ConstantsSender.pickToAnother);
+        clickElementJs(LocatorsSender.pickToAnother);
     }
     public void fieldName(){
-        sendKeysToElement(ConstantsSender.fieldName,"Moshe");
+        sendKeysToElement(LocatorsSender.fieldName,"Moshe");
 
     }
 
@@ -18,42 +18,42 @@ public class SenderReceiver extends BasePage {
         clickEvent();
     }
     public void writeGreeting(){
-        sendKeysToElement(ConstantsSender.writeGreeting,"מזל טוב");
+        sendKeysToElement(LocatorsSender.writeGreeting,"מזל טוב");
     }
     public void sendPic(){
-        sendKeysToElement(ConstantsSender.sendPic,"C:\\Users\\D\\Downloads\\23-11_אוטומציה\\Class_10\\Second Project\\BuyMe\\pics\\send1.jpg");
+        sendKeysToElement(LocatorsSender.sendPic,"C:\\Users\\D\\Downloads\\23-11_אוטומציה\\Class_10\\Second Project\\BuyMe\\pics\\send1.jpg");
     }
     public void continueBtn(){
-        clickElement(ConstantsSender.continueBtn);
+        clickElement(LocatorsSender.continueBtn);
     }
     //-------
     public void selectNow(){
-        clickElementJs(ConstantsSender.selectNow);
+        clickElementJs(LocatorsSender.selectNow);
     }
     public void selectEmail(){
         clickEmail();
         inputEmail();
     }
     public void inputSenderName(){
-        sendKeysToElement(ConstantsSender.inpunSenderName,"Moshe");
+        sendKeysToElement(LocatorsSender.inpunSenderName,"Moshe");
     }
     public void btnToPay(){
-        clickElement(ConstantsSender.btnToPay);
+        clickElement(LocatorsSender.btnToPay);
     }
     //-------pivert functions------
     private void clickFeildEvent(){
-        clickElement(ConstantsSender.selectFeildEvent);
+        clickElement(LocatorsSender.selectFeildEvent);
 
     }
     private void clickEvent(){
-        clickElement(ConstantsSender.selectEvent);
+        clickElement(LocatorsSender.selectEvent);
 
     }
     private void clickEmail(){
-        clickElement(ConstantsSender.selectEmail);
+        clickElement(LocatorsSender.selectEmail);
     }
     private void inputEmail(){
-        sendKeysToElement(ConstantsSender.inpunEmail,"moshe@test.com");
+        sendKeysToElement(LocatorsSender.inpunEmail,"moshe@test.com");
     }
 
 }

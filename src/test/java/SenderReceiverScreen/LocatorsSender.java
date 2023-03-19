@@ -2,7 +2,7 @@ package SenderReceiverScreen;
 
 import org.openqa.selenium.By;
 
-public class ConstantsSender {
+public class LocatorsSender {
     public  static final By pickToAnother = By.cssSelector("div[id=ember2225]");
     public  static final By fieldName = By.cssSelector("input[id=ember2229]");
     public  static final By selectFeildEvent = By.cssSelector("label[id=ember2289");

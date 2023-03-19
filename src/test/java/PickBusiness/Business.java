@@ -5,9 +5,9 @@ import WebSettings.BasePage;
 
 public class Business extends BasePage {
     public void pickBusiness(){
-clickElement(ConstantsBsns.pickBusiness);
+clickElement(LocatorsBsns.pickBusiness);
     }
     public void pickCard(){
-        clickElement(ConstantsBsns.pickCard);
+        clickElement(LocatorsBsns.pickCard);
     }
 }

@@ -3,7 +3,7 @@ package Registration;
 import WebSettings.BasePage;
 
 
-public class RegistrationPage extends BasePage {
+public class LocatorsPage extends BasePage {
 
 
     public void regBtn(){

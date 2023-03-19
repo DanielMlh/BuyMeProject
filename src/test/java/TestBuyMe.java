@@ -1,8 +1,8 @@
 import PickBusiness.Business;
 import Registration.ConstantsReg;
-import Registration.RegistrationPage;
+import Registration.LocatorsPage;
 import SearchBarWrapper.SearchBar;
-import SenderReceiverScreen.ConstantsSender;
+import SenderReceiverScreen.LocatorsSender;
 import SenderReceiverScreen.SenderReceiver;
 import WebSettings.DriverSingleton;
 import WebSettings.SetupDriver;
@@ -45,7 +45,7 @@ public void setup(){
 @Test(priority = 1)
     public void registrationScreen(){
     test=extent.createTest("Registration screen","description");
-    RegistrationPage regPage=new RegistrationPage();
+    LocatorsPage regPage=new LocatorsPage();
     try {
         regPage.regBtn();
         test.log(Status.PASS,"Registration button");
@@ -69,7 +69,7 @@ test.fail("Error:Login button "+e.getClass(),MediaEntityBuilder.createScreenCapt
     catch (Exception e){
     test.fail("Error: Input feilds "+e.getClass(),MediaEntityBuilder.createScreenCaptureFromPath(takeScreenShot(timeNow)).build());
     }
-       Assert.assertEquals("Moshe",DriverSingleton.getDriverInstance().findElement(ConstantsReg.fieldName).getText());
+       Assert.assertEquals("Moshe",DriverSingleton.getDriverInstance().findElement(ConstantsReg.fieldName).getAttribute("value"));
         Assert.assertEquals("moshetest@test7.com",DriverSingleton.getDriverInstance().findElement(ConstantsReg.fieldEmail).getText());
     try {
         regPage.selectConfirm();
@@ -181,8 +181,8 @@ test.fail("Error:Login button "+e.getClass(),MediaEntityBuilder.createScreenCapt
 
         try{
             senderReceiver.fieldName();
-            Assert.assertEquals("Moshe",DriverSingleton.getDriverInstance().findElement(ConstantsSender.inpunSenderName).getText());
-            Assert.assertEquals("Moshe",DriverSingleton.getDriverInstance().findElement(ConstantsSender.fieldName).getText());
+            Assert.assertEquals("Moshe",DriverSingleton.getDriverInstance().findElement(LocatorsSender.inpunSenderName).getText());
+            Assert.assertEquals("Moshe",DriverSingleton.getDriverInstance().findElement(LocatorsSender.fieldName).getText());
             test.log(Status.PASS,"Field name ");
         }
 
