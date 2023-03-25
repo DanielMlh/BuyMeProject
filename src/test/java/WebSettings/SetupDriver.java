@@ -11,7 +11,7 @@ public class SetupDriver {
     public SetupDriver(){
         this.driver=DriverSingleton.getDriverInstance();
         this.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-
+        
     }
 public WebDriver getDriver(){
         return driver;

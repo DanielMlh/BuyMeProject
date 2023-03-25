@@ -1,6 +1,6 @@
 import PickBusiness.Business;
-import Registration.ConstantsReg;
-import Registration.LocatorsPage;
+import Registration.LocatorsReg;
+import Registration.RegistrationPage;
 import SearchBarWrapper.SearchBar;
 import SenderReceiverScreen.LocatorsSender;
 import SenderReceiverScreen.SenderReceiver;
@@ -45,7 +45,7 @@ public void setup(){
 @Test(priority = 1)
     public void registrationScreen(){
     test=extent.createTest("Registration screen","description");
-    LocatorsPage regPage=new LocatorsPage();
+    RegistrationPage regPage=new RegistrationPage();
     try {
         regPage.regBtn();
         test.log(Status.PASS,"Registration button");
@@ -69,8 +69,8 @@ test.fail("Error:Login button "+e.getClass(),MediaEntityBuilder.createScreenCapt
     catch (Exception e){
     test.fail("Error: Input feilds "+e.getClass(),MediaEntityBuilder.createScreenCaptureFromPath(takeScreenShot(timeNow)).build());
     }
-       Assert.assertEquals("Moshe",DriverSingleton.getDriverInstance().findElement(ConstantsReg.fieldName).getAttribute("value"));
-        Assert.assertEquals("moshetest@test7.com",DriverSingleton.getDriverInstance().findElement(ConstantsReg.fieldEmail).getText());
+       Assert.assertEquals("Moshe",DriverSingleton.getDriverInstance().findElement(LocatorsReg.fieldName).getAttribute("value"));
+        Assert.assertEquals("moshetest@test7.com",DriverSingleton.getDriverInstance().findElement(LocatorsReg.fieldEmail).getText());
     try {
         regPage.selectConfirm();
         test.log(Status.PASS,"Select check confirm");

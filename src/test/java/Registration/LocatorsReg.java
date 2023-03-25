@@ -2,7 +2,7 @@ package Registration;
 
 import org.openqa.selenium.By;
 
-public class ConstantsReg {
+public class LocatorsReg {
     public  static final By signedBtn= By.cssSelector("li[class=notSigned]");
     public  static final By logRegBtn= By.cssSelector("span.text-link.theme");
     public  static final By fieldName= By.cssSelector("input[id=ember1867]");
